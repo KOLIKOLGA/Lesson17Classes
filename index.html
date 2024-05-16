@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>lesson17first</title>
+  </head>
+  <body>
+    <form action="" id="person">
+      <label
+        >Ваше имя фамилия
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия" />
+      </label>
+      <label
+        >Почта
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="email@email.com"
+        />
+      </label>
+      <label
+        >Возраст
+        <input type="number" name="age" id="age" required />
+      </label>
+      <label
+        >Образование
+        <select name="education" id="education" required>
+          <option value="">--Выбрать--</option>
+          <option value="Высшее">Высшее</option>
+          <option value="Средне-специальное">Средне-специальное</option>
+          <option value="Среднее">Среднее</option>
+        </select>
+      </label>
+      <label
+        >Учебное заведение
+        <input type="text" name="institution" id="institution" value="" />
+      </label>
+      <label
+        >Год окончания
+        <input
+          type="text"
+          name="date-finish"
+          id="date-finish"
+          placeholder="1990"
+          value=""
+        />
+      </label>
+
+      <label>
+        <input type="checkbox" name="work-experience" value="" />Опыт работы
+      </label>
+      <label
+        >Должность
+        <input type="text" name="post" id="post" value="-" />
+      </label>
+      <label
+        >Место работы
+        <input type="text" name="place-of-work" id="place-of-work" value="-" />
+      </label>
+      <button type="submit" id="submit">сохранить</button>
+    </form>
+    <table class="table">
+      <thead class="thead">
+        <tr>
+          <th>Имя Фамилия</th>
+          <th>Почта</th>
+          <th>Возраст</th>
+          <th>Образование</th>
+          <th>Учебное заведение</th>
+          <th>Год окончания</th>
+          <th>Опыт работы</th>
+          <th>Должность</th>
+          <th>Место работы</th>
+          <th>Опции</th>
+        </tr>
+      </thead>
+      <tbody class="tbody"></tbody>
+    </table>
+    <script src="./Person.js"></script>
+    <script src="./Higher.js"></script>
+    <script src="./Special.js"></script>
+    <script src="./Secondary.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
