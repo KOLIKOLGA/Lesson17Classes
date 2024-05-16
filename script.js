@@ -96,8 +96,6 @@ const getEducation = () => {
     newWork.seyHello();
     workData.push(newWork);
   }
-  console.log(workData);
-  console.log(workExperience.value);
   localStorage.setItem("workData", JSON.stringify(workData));
 };
 
@@ -136,7 +134,6 @@ const showTab = () => {
     inputPlaceOfWork.value = "";
   });
 };
-if (workData !== []) {
-  showTab();
-}
+showTab();
+
 submit.addEventListener("click", handleFormSubmit);

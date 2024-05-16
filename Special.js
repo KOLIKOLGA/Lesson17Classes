@@ -1,4 +1,3 @@
-console.log("teenager");
 class Special extends Person {
   constructor(
     name,

@@ -1,5 +1,3 @@
-console.log("adult");
-
 class Higher extends Person {
   constructor(
     name,
